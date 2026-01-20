@@ -1,3 +1,16 @@
+/*Tabela - Atividades Empresa00*/
+function abrird(){
+	const epa = document.getElementById('janelaepd')
+	epa.classList.add('abrir')
+
+	epa.addEventListener('click',(e) => {
+		if(e.target.id == 'fecharepd' || e.target.id == 'janelaepd'){
+			epa.classList.remove('abrir')
+		}
+	}) 
+}
+
+
 /*Tabela - Atividades Empresa01*/
 function abrira(){
 	const epa = document.getElementById('janelaepa')
@@ -30,18 +43,6 @@ function abrirc(){
 	epc.addEventListener('click',(e) => {
 		if(e.target.id == 'fecharepc' || e.target.id == 'janelaepc'){
 			epc.classList.remove('abrir')
-		}
-	}) 
-}
-
-/*Tabela - Atividades Empresa00*/
-function abrird(){
-	const epa = document.getElementById('janelaepd')
-	epa.classList.add('abrir')
-
-	epa.addEventListener('click',(e) => {
-		if(e.target.id == 'fecharepd' || e.target.id == 'janelaepd'){
-			epa.classList.remove('abrir')
 		}
 	}) 
 }
@@ -179,5 +180,6 @@ function abrirbf(){
 		}
 	}) 
 }
+
 
 
